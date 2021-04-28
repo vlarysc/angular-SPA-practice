@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+.search-container {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.input-search {
+  border: 1px solid grey;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.btn-add {
+  border-radius: 8px;
+  min-width: 200px;
+  background-color: rgb(88, 88, 255);
+  color: aliceblue;
+  font-size: large;
+  font-weight: 600;
+}
