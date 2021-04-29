@@ -9,9 +9,9 @@ import { HttpClient } from '@angular/common/http';
 export class UsuariosService {
   private url = 'https://reqres.in/api/users';
 
-  constructor(private http: HttpClient) {}
+  constructor(private https: HttpClient) {}
 
   getUsuarios(): Observable<RespostaUsuario> {
-    return this.http.get<RespostaUsuario>(this.url);
+    return this.https.get<RespostaUsuario>(this.url);
   }
 }

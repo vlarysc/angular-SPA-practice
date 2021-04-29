@@ -1,4 +1,4 @@
-<h1>Usuarios</h1>
+<app-home></app-home>
 
 <table *ngIf="respostaUsuario">
   <thead>
@@ -6,8 +6,8 @@
     <td>Sobre Nome</td>
   </thead>
   <tbody>
-    <tr *ngFor="let Usuario of respostaUsuario.data">
-      <td></td>
+    <tr *ngFor="let usuario of respostaUsuario.data">
+      <td>{{ usuario.email }}</td>
       <td>tal</td>
     </tr>
   </tbody>

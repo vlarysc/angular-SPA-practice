@@ -8,11 +8,9 @@ import { RespostaUsuario } from './usuarios.model';
   styleUrls: ['./usuarios.component.css'],
 })
 export class UsuariosComponent implements OnInit {
-  respostaUsuario: RespostaUsuario;
+  respostaUsuario!: RespostaUsuario;
 
-  constructor(private usuariosService: UsuariosService) {
-    
-  }
+  constructor(private usuariosService: UsuariosService) {}
 
   ngOnInit(): void {
     console.log(UsuariosComponent);
