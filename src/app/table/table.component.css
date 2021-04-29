@@ -1,7 +1,11 @@
 table {
   width: 100%;
+  border: rgb(187, 182, 182) solid 1px;
 }
 
+.container-table {
+  padding: 10px;
+}
 .mat-form-field {
   font-size: 14px;
   width: 100%;
@@ -11,18 +15,85 @@ table {
   padding: 10px;
   justify-content: space-between;
 }
+.add-container {
+  display: flex;
+  padding: 10px;
+  justify-content: flex-end;
+  width: 1460px;
+  margin-top: 10px;
+}
 
 .input-search {
-  border: 1px solid grey;
   max-width: 300px;
   border-radius: 8px;
 }
 
 .btn-add {
-  border-radius: 8px;
-  min-width: 200px;
-  background-color: rgb(88, 88, 255);
+  background-color: rgb(25, 106, 199);
   color: aliceblue;
   font-size: large;
   font-weight: 600;
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.btn-add-icon {
+  font-size: larger;
+}
+
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.btn-delete {
+  color: red;
+}
+
+.btn-edit {
+  color: black;
+  margin-right: 10px;
+}
+
+.example-tbn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+th.mat-header-cell:last-of-type,
+td.mat-cell:last-of-type,
+td.mat-footer-cell:last-of-type {
+  padding-right: 1px;
+  width: 120px;
+  text-align: unset;
 }

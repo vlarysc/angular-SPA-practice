@@ -6,6 +6,7 @@ export interface PeriodicElement {
   id: number;
   email: string;
   telefone: string;
+  opcoes: string;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
   {
@@ -13,48 +14,56 @@ const ELEMENT_DATA: PeriodicElement[] = [
     name: 'Manoel Francisco',
     email: 'manoel@gmail.com',
     telefone: '(00) 0 0000-0000',
+    opcoes: 'oi',
   },
   {
     id: 2,
     name: 'Renata Ribeiros',
     email: 'renata@gmail.com',
     telefone: '(00) 0 0000-0000',
+    opcoes: 'oi',
   },
   {
     id: 3,
     name: 'André Rodrigues',
     email: 'andre@gmail.com',
     telefone: '(00) 0 0000-0000',
+    opcoes: 'oi',
   },
   {
     id: 4,
     name: 'Arthur Silva',
     email: 'arthur@gmail.com',
     telefone: '(00) 0 0000-0000',
+    opcoes: 'oi',
   },
   {
     id: 5,
     name: 'Diego Borinato',
     email: 'diego@gmail.com',
     telefone: '(00) 0 0000-0000',
+    opcoes: 'oi',
   },
   {
     id: 6,
     name: 'Regina Dantas',
     email: 'regina@gmail.com',
     telefone: '(00) 0 0000-0000',
+    opcoes: 'oi',
   },
   {
     id: 7,
     name: 'Charles Baroldo',
     email: 'charles@gmail.com',
     telefone: '(00) 0 0000-0000',
+    opcoes: 'oi',
   },
   {
     id: 8,
     name: 'Felipe Atilas',
     email: 'felipe@gmail.com',
     telefone: '(00) 0 0000-0000',
+    opcoes: 'oi',
   },
 ];
 
@@ -64,7 +73,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./table.component.css'],
 })
 export class TableComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'name', 'email', 'telefone'];
+  displayedColumns: string[] = ['id', 'name', 'email', 'telefone', 'opcoes'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   applyFilter(event: Event) {

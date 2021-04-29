@@ -12,9 +12,18 @@ import { SearchComponent } from './search/search.component';
 import { TableComponent } from './table/table.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
+import { AvatarModule } from 'ngx-avatar';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SearchComponent, TableComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    SearchComponent,
+    TableComponent,
+    UsuariosComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,6 +33,8 @@ import { MatInputModule } from '@angular/material/input';
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
+    HttpClientModule,
+    AvatarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
