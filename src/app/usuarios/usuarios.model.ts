@@ -1,3 +1,5 @@
+//GET ALL usuarios
+
 export interface Usuario {
   id: number;
   email: string;
@@ -18,4 +20,37 @@ export interface RespostaUsuario {
   total_pages: number;
   data: Usuario[];
   support: Support;
+}
+
+//Create Usuario
+
+export interface RequestCreate {
+  name: string;
+  job: string;
+}
+
+export interface RespostaCreate {
+  name: string;
+  job: string;
+  id: string;
+  createdAt: Date;
+}
+
+//Update Usuario
+
+export interface RespostaUpdate {
+  name: string;
+  job: string;
+}
+
+export interface ResponseUpdate {
+  name: string;
+  job: string;
+  updatedAt: Date;
+}
+
+//Get Usuario
+
+export interface RespostaUsuarioUnico {
+  data: Usuario;
 }

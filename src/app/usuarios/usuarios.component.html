@@ -4,11 +4,15 @@
   <thead>
     <td>Nome</td>
     <td>Sobre Nome</td>
+    <td>...</td>
   </thead>
   <tbody>
     <tr *ngFor="let usuario of respostaUsuario.data">
+      <td>{{ usuario.first_name + " " + usuario.last_name }}</td>
       <td>{{ usuario.email }}</td>
-      <td>tal</td>
+      <td>
+        <button><a routerLink="/update/{{ usuario.id }}"> Editar </a></button>
+      </td>
     </tr>
   </tbody>
 </table>

@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { TableComponent } from './table/table.component';
+import { CreateUserComponent } from './usuarios/create-user/create-user.component';
+import { UpdateComponent } from './usuarios/update/update.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 
 const routes: Routes = [
@@ -12,6 +14,14 @@ const routes: Routes = [
   {
     path: '',
     component: UsuariosComponent,
+  },
+  {
+    path: 'create',
+    component: CreateUserComponent,
+  },
+  {
+    path: 'update/:id',
+    component: UpdateComponent,
   },
 ];
 

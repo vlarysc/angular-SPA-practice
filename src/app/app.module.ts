@@ -15,6 +15,9 @@ import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { AvatarModule } from 'ngx-avatar';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { CreateUserComponent } from './usuarios/create-user/create-user.component';
+import { FormsModule } from '@angular/forms';
+import { UpdateComponent } from './usuarios/update/update.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
     SearchComponent,
     TableComponent,
     UsuariosComponent,
+    CreateUserComponent,
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +40,7 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
     MatInputModule,
     HttpClientModule,
     AvatarModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
